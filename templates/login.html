@@ -8,148 +8,572 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  
 	  <title>Login</title>
-	  <style>
 	  
-		body
-		{
-			background-image:url(https://www.virginexperiencedays.co.uk/content/img/product/large/PFLYGP-SP6.jpg);
-			background-repeat: no-repeat;
-			background-size: 100% 125%;
-            height:auto;
-		}
-		
-		.row
-		{
-			position:relative;
-			top:60px;left:9%;
-			width:750px;
-		}
-          
-		.header
-		{
-			background-color:#63625d;
-			position:relative;
-			top:-42px;
-			color:white;
-			font-family:serif;	
-		}
-		
-		.logg
-		{
-			background-image:url(https://www.virginexperiencedays.co.uk/content/img/product/large/PFLYGP-SP6.jpg);
-			background-repeat: no-repeat;
-			background-size:100% 110%;
-			width: 800px;
-			height:600px;
-			border: 2px solid #3b3c3d;
-			border-radius:10px;
-			margin:50px 0 0 225px;	
-            position: relative;
-            left:20%;
-            top:50px;
-		}
-          
-          
-        .button span 
-        {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
-
-        .button span:after 
-        {
-          content: '\00bb';
-          position: absolute;
-          opacity: 0;
-          top: 0;
-          right: -20px;
-          transition: 0.5s;
-        }
-
-        .button:hover span {
-          padding-right: 25px;
-        }
-
-        .button:hover span:after {
-          opacity: 1;
-          right: 0;
-        }
-		
-          
-        * {box-sizing: border-box}
-            .modal
+          <style>
+	  
+		    body
+		    {
+			    background-image:url(https://upload.wikimedia.org/wikipedia/commons/6/66/Lockheed_Vega_5-C_%285827550370%29.jpg);
+			    background-repeat: no-repeat;
+			    background-size: 100% 125%;
+                min-width: 310px;
+		    }
+            
+            
+            .row
             {
                 position:relative;
-                top:-650px;
-                background-color: orange;
-                width:56%;
-                height: 660px;
-                display
-                
-            }
-          
-            .button1 {
-                background-color: #4CAF50;
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                cursor: pointer;
-                width: 80%;
-                opacity: 0.9;
+                top:50px;left:9%;
+                width:750px;
             }
 
-            .button1:hover {
-                opacity:1;
+            #head
+            {
+                background-color: silver;
+                width:110%;
+                margin-left:-25px;
+                margin-top: -23px;
+                color:#383838;
             }
-
-            /* Extra styles for the cancel button */
-            .cancelbtn {
-                padding: 14px 20px;
-                background-color: #f44336;
-            }
-
-            /* Float cancel and signup buttons and add an equal width */
-            .cancelbtn, .signupbtn {
-              float: left;
-              width: 50%;
-            }
-
-            /* Modal Content/Box */
-            .modal-content {
-                
-               
-                 background-image: url(https://cdn5.vectorstock.com/i/1000x1000/57/74/plane-icon-flying-on-orange-background-vector-8655774.jpg);
-                background-repeat: no-repeat;
-                background-size: 850px 935px;
-            }
-
-            /* Style the horizontal ruler */    
-
-            /* The Close Button (x) */
-            .close {
-                position: absolute;
-                right: 30px;
-                top: 0px;
-                font-size: 40px;
-                font-weight: bold;
-                color: black;
-            }
-
-            .close:hover,
-            .close:focus {
-                color: #f44336;
-                cursor: pointer;
-            }
-
-            /* Clear floats */
+            .header
+            {
+                background-color:#a5a5a5;
+                position:relative;
+                top:-42px;
             
-            /* Change styles for cancel button and signup button on extra small screens */
+                width:100%;
+                height:80px;
+                font-family:serif;	
+            }
+
+            .logg
+            {
+                background-image:url(https://upload.wikimedia.org/wikipedia/commons/6/66/Lockheed_Vega_5-C_%285827550370%29.jpg);
+                background-repeat: no-repeat;
+                background-size:100% 110%;
+                width: 40%;
+                height:450px;
+                border: 2px solid #3b3c3d;
+                border-radius:10px;
+                margin:50px 0 0 19%;	
+                position: relative;
+                left:10%;
+                top:0px;
+				padding-left: 100px;
+				padding-top: 50px;
+            }
+            
+            .modal
+            {
+                background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                background-repeat : no-repeat;
+                background-position:  center;
+                background-size: 105% 105%;
+                width:50%;
+                overflow-x: hidden;
+                
+            }
+            
+            .btn 
+            {
+                background-color: #919191;
+                border: none;
+                color: black;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 1;
+                transition: 0.3s;
+                
+            }
+
+            .btn:hover {opacity: 1}
+
+            .button span 
+            {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .button span:after 
+            {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            .button:hover span 
+            {
+                padding-right: 25px;
+            }
+
+            .button:hover span:after 
+            {
+                opacity: 1;
+                right: 0;
+            } 
+            
+            .button
+            {
+                margin-top: -7%;
+                margin-left: -5%;   
+            }
+            #button11
+            {
+				margin-left: -15px;
+            }
+                
+            #button1100
+            {	
+                position: relative;
+                margin-left: 6%;			
+            }
+
+            #login
+            {
+                margin-left:-100px;
+                margin-top: -150px;
+            }
+              
+            #id01
+            {
+            
+                margin-top:-30%;
+                
+            }
+              
+              
+            @media screen and (max-width:375px)
+			{
+                    
+                body
+                {
+                    background-size:310% 140%;
+                }
+				
+                .header
+                {
+				    width: 307%;
+				}
+				
+				.logg
+                {
+				    width:230%;
+                    height:750px;
+                    margin-left:30%;
+                    margin-top:150%;
+				}
+				
+                #login
+                {
+                    margin-top: 0%;
+                    margin-left: -3%;
+                }
+                
+                #signup
+                {
+                    margin-left: 1.5%;
+                }
+                
+				#button11
+                {
+				    margin-left: -15px;
+                    
+				}
+                
+                #button1100
+                {
+                    margin-left: -10%;
+				}
+				
+                #id
+                {
+                    position:relative;
+                    top:-400px;
+                }
+				.modal
+				{
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 110% 115%;
+                    width:95%;
+			        overflow-x: hidden; 
+				}
+				#head
+                {   
+				    width: 270%;
+                    margin-left:-150px;
+				}
+				
+				h4
+                {	
+				    margin-right: 100px;
+				}
+				
+				#cc11
+                {
+				    margin-left: 20px;
+				}
+            
+				#name
+                {
+                    position: relative;
+                    top: 50px;
+                }
+				
+				#inc
+                {
+                    width:200px;
+                
+                }
+                
+                #pass
+                {
+                    position: relative;
+                    left:300px;
+                }
+				
+                #dob
+                {
+                    margin-left:-8px;
+                    margin-top: -100px
+                }
+                
+                 #id01
+                {
+                    margin-top:-80%;
+                }
+                
+            }
+              
+			@media screen and (min-width:376px) and (max-width: 500px)
+			{
+                
+                body
+                {
+                    background-size:262% 140%;
+                }
+				
+                .header
+                {
+				    width: 262%;
+				}
+				
+				.logg
+                {
+				    
+				    width:194%;
+                    height:725px;
+                    margin-left:20%;
+                    margin-top:100%;
+				}
+				
+                #login
+                {
+                    margin-top: 0%;
+                    margin-left: -3%;
+                }
+                
+                #signup
+                {
+                    margin-left: 1.5%;
+                }
+                
+				#button11
+                {
+				    margin-left: -15px;
+                    
+				}
+                
+                #button1100
+                {
+                    margin-left: -10%;
+				}
+				
+                #id
+                {
+                    position:relative;
+                    top:-400px;
+                }
+				.modal
+				{
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 110% 115%;
+                    width:95%;
+			        overflow-x: hidden; 
+				}
+				#head
+                {   
+				    width: 270%;
+                    margin-left:-150px;
+				}
+				
+				h4
+                {	
+				    margin-right: 100px;
+				}
+				
+				#cc11
+                {
+				    margin-left: 20px;
+				}
+            
+				#name
+                {
+                    position: relative;
+                    top: 50px;
+                }
+				
+				#inc
+                {
+                    width:200px;
+                
+                }
+                
+                #pass
+                {
+                    position: relative;
+                    left:300px;
+                }
+				
+                #dob
+                {
+                    margin-left:-8px;
+                    margin-top: -100px
+                }
+                
+                 #id01
+                {
+                    margin-top:-80%;
+                }
+                
+                
+			}
+              
+              
+              
+			
+			@media screen and (min-width:501px) and (max-width: 800px)
+			{
+                
+                body
+                {
+                    background-size:146% 131%;
+                    overflow-y: hidden;
+                }
+			
+				.header
+                {
+				    width: 146%;
+				}
+
+				.logg
+                {
+                    margin-top: 300px;
+                    padding-left: 100px;
+                    padding-top: 40px;
+                    width: 830px;
+                    height: 750px;
+                    margin-left: 10%;
+				}
+                
+                #login
+                {
+                    margin-top: 0%;
+                    margin-left: -2%;
+                }
+				
+                #signup
+                {
+                    margin-left: 1.5%;    
+                }
+                
+                #name
+                {
+                    position: relative;
+                    top: 50px;
+                }
+				#button11
+                {
+    				position: relative;			
+				    margin-bottom: 2%;
+				}
+				
+				#button1100
+                {
+                    position: relative;
+                    margin-left: 4%;
+				}
+				
+                
+				.modal
+				{
+                    
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 105% 115%;
+                    width:80%;
+			        overflow-x: visible; 
+				}
+			
+                #inc
+                {
+                    width:150px;
+                }
+				
+				#head
+                {
+				    width: 170%;
+                    margin-left:-100px;
+				}
+				
+				h4{
+					
+					margin-right: 100px;
+				}
+				
+				#cc11
+                {
+				    margin-left: 20px;
+				}
+                
+                #pass
+                {
+                    position: relative;
+                    left:130px;
+                }
+                #button1
+                {
+                    margin-left: 20px;
+                }
+                
+                #id01
+                {
+                    margin-top:-80%;
+                }
+                
+			}
+            
+            @media screen and (min-width:1000px) and (max-width: 1300px)
+			{
+                body
+                {
+                    background-size: 100% 140%;
+                }
+                .modal
+				{
+                    
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 105% 115%;
+                    width:70%;
+                    height:1500px;
+			        overflow-x: hidden; 
+				}
+                
+                .logg
+                {
+                    width:650px;
+                    height:480px;
+                    margin-top: 150px;
+                }
+                #head
+                {
+                    width:120%;
+                    margin-left: -90px;
+                }
+                
+                #name
+                {
+                    position: relative;
+                    top: 40px;
+                    left:30px;
+                }
+                
+                #button11
+                {
+				    margin-left: 20px;
+				}
+                
+                #button1100
+                {
+                    margin-left: 8%;
+				}
+                
+                #id01
+                {
+                    margin-top:-45%;        
+                }
+                
+            }
+			
+            
+            @media screen and (min-width:1301px) and (max-width: 1500px)
+			{
+                body
+                {
+                    background-size: 100% 120%;
+                }
+                .modal
+				{
+                    
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 105% 115%;
+                    padding: 0 0% 0px 5%;
+                    width:70%;
+			        overflow-x: hidden; 
+				}
+                
+                .logg
+                {
+                    width:650px;
+                    height:480px;
+                    margin-top: 150px;
+                }
+                #head
+                {
+                    width:120%;
+                    margin-left: -95px;
+                }
+                
+                #name
+                {
+                    position: relative;
+                    top: 40px;
+                    left:30px;
+                }
+                
+                #button11
+                {
+				    margin-left: 20px;
+				}
+                
+                #button1100
+                {
+                    margin-left: 8%;
+				}
+               
+                #id01
+                {
+                    margin-top:-40%;        
+                }
+            }
+			
           
-		
-	  </style>
+        </style>
     </head>
 
     <body>
@@ -157,29 +581,29 @@
 		
 		<div class="header">
 				
-				<h1 style="text-align:center;color:#cecbbe">Login</h1>
+				<h1 style="text-align:center;color:ghostwhite">Login</h1>
 		
 		</div>
 		
 
 		<div class="logg">
 			<div class="row">
-				<form class="col s12" method='post' action='/login'>
+				<form class="col s12" method='post' action='/login' id="login">
 					<div class="row">
 						{% if error is defined %}
 						<h4 style="color:red;"><b>Incorrect Email or Password</b></h4>
 						{% endif %}
 						<div class="input-field col s6">
-							<i class="material-icons prefix" style="font-size:43px;color:white;">account_circle</i>
-							<input id="icon_prefix" type="text" style="color:white" class="validate" name="email">
-							<label for="icon_prefix" style="color:white;font-size:22px;">User Name</label>
+							<i class="material-icons prefix" style="font-size:43px;color:black;">account_circle</i>
+							<input id="icon_prefix" type="text" style="color:black" class="validate" name="email">
+							<label for="icon_prefix" style="color:black;font-size:22px;">User Name</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field col s6">
-							<i class="material-icons prefix" style="font-size:43px;color:white;">lock_outline</i>
-							<input id="icon_password" type="Password" style="color:white" class="validate" name="password">
-							<label for="icon_password" style="color:white;font-size:22px;">Password</label>
+							<i class="material-icons prefix" style="font-size:43px;color:black;">lock_outline</i>
+							<input id="icon_password" type="Password" style="color:black" class="validate" name="password">
+							<label for="icon_password" style="color:black;font-size:22px;">Password</label>
 						</div>
 					</div>
 					 <button class="button" style="width:100px;height:40px;vertical-align:middle;position:relative;left:30%;top:100px;border-radius:5px"><span style="font-size: 18px"><strong><i>Login</i></strong></span></button>
@@ -190,7 +614,7 @@
 		
            
 			
-            <button class="button" style="width:100px;height:40px;vertical-align:middle;position:relative;left:41%;top:160px;border-radius:5px" onclick="document.getElementById('id01').style.display='block'"><span><strong style="font-size: 16px"><i>Sign Up</i></strong></span></button>
+            <button  id="signup" class="button" style="width:100px;height:40px;vertical-align:middle;position:relative;left:32%;top:160px;border-radius:5px" onclick="document.getElementById('id01').style.display='block'"><span><strong style="font-size: 16px"><i>Sign Up</i></strong></span></button>
   
       
         </div>
@@ -200,10 +624,10 @@
             
             
         <div id="id01" class="modal">
-            <nav style="height:85px;background-color:#e8932c">
+            <nav style="height:85px;background-color:silver">
             <h3 style="position:relative;left:40%;top:15px;color:black">Sign Up</h3>
+            <a href="#!" onclick="document.getElementById('id01').style.display='none'" class="modal-close waves-effect waves-green btn-flat" id="cc11" style="position:relative;left:90%;top:-60px;font-size: 22px;font-weight: bold">X</a>
             </nav>
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <form method='post' action='/signup' class="modal-content" action="/action_page.php">
                    <div id="elements" style="color:black;position:relative;top:-60px">
                     <div class="row" style="position: relative;left:-220px;top:10px;width:50%">
@@ -282,17 +706,11 @@
                         </form>
                     </div>
                     <div id="bb" style="position: relative;left:55%;top:0px">
-                        <button class="button1" style="vertical-align:middle;position:relative;left:-45%;top:-45px" value="signup"><span style="font-size: 22px;color:black;"><strong><i>SignUp</i></strong></span></button>
+                        <button class="button1 button" style="vertical-align:middle;position:relative;left:-8%;top:-20px;width:100px;height: 40px;" value="signup"><span style="font-size: 18px;color:black;"><strong><i>SignUp</i></strong></span></button>
                     </div>
                     </div>
                 </form>
             </div>
-
-			    
-			    
-			    
-			    
-			    
 			    
 			</div>
 			
@@ -304,20 +722,17 @@
                     if (event.target == modal) 
                     {
                         modal.style.display = "none";
-                        body.style.height = "auto";
                     }
                 }
             </script>
             
-        <script>
-             </script>
-         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
-	  <script>
-			$(document).ready(function() {
-			$('input#input_text, textarea#textarea2').characterCounter();
-			});       
-	       </script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+            <script>
+                $(document).ready(function() {
+                $('input#input_text, textarea#textarea2').characterCounter();
+                });       
+           </script>
         
       
 
