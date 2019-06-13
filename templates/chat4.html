@@ -2,7 +2,7 @@
 
     <head>
 
-        <title>Fight</title>
+        <title>Booking</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
       
@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" media="screen,projection">
         <link type="text/css" rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css">
         
      
         <style>
@@ -20,7 +20,7 @@
            body 
             {
                 font-family: Arial, Helvetica, sans-serif; 
-                background-image:url(https://images.unsplash.com/photo-1521871173595-c24e09d8ba4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=799753317495398fe428f78387d7b428&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+                background-image:url(https://images.wallpaperscraft.com/image/airplane_clouds_flight_120632_3840x2400.jpg);
                background-repeat: no-repeat;
 			   background-size: cover;
 			   background-attachment: fixed;
@@ -54,7 +54,11 @@
             }
             
             
-           
+            #back
+            {
+                position: relative;
+                top:-1px;
+            }
             
              #bsp
             {
@@ -70,8 +74,6 @@
                 background-size: 90px 90px;
                 
             }
-
-
           
             .tt
             {
@@ -84,14 +86,12 @@
                 padding: 10px 18px;
                 background-color: #f44336;
             }
-
             /* Center the image and position the close button */
             .imgcontainer {
                 text-align: center;
                 margin: 10px 0 12px 0;
                 position: relative;
             }
-
             img.avatar {
                 width: 40%;
                 border-radius: 50%;
@@ -100,12 +100,14 @@
             .container {
                 padding: 16px;
             }
-
             span.psw {
                 float: right;
                 padding-top: 16px;
             }
-            
+            footer
+            {
+                background-color: darkblue;    
+            }
             .modal
             {
                 width:750px;
@@ -113,7 +115,6 @@
                 margin-top:150px;
                 background-color:cornflowerblue;
             }
-
             /* The Modal (background) */
             .modal2 {
                 display: none; /* Hidden by default */
@@ -128,7 +129,6 @@
                 background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
                 padding-top: 60px;
             }
-
             /* Modal Content/Box */
             .modal-content1
             {
@@ -139,7 +139,6 @@
                 float:right;
                 /* Could be more or less, depending on screen size */
             }
-
             /* The Close Button (x) */
             .close 
             {
@@ -150,13 +149,11 @@
                 font-size: 35px;
                 font-weight: bold;
             }
-
             .close:hover,
             .close:focus {
                 color: red;
                 cursor: pointer;
             }
-
             /* Add Zoom Animation */
             .animate 
             {
@@ -171,17 +168,14 @@
                 margin-top: 50px;
                 margin-right:20px;
             }
-
             @-webkit-keyframes animatezoom {
                 from {-webkit-transform: scale(0)} 
                 to {-webkit-transform: scale(1)}
             }
-
             @keyframes animatezoom {
                 from {transform: scale(0)} 
                 to {transform: scale(1)}
             }
-
             /* Change styles for span and cancel button on extra small screens */
             @media screen and (max-width: 300px) {
                 span.psw {
@@ -195,15 +189,459 @@
             
             .page-footer
             {
-                margin-top:20%;
-                background-color: blue;
+                margin-top:10%;
+                background-color: darkblue;
             }
             
            .fa-github
             {
-                font-size:75px;
-                margin:-180px 0 0 988px;
-                color:white;
+                font-size:60px;
+                margin-left:45%;
+                margin-top: 0%;
+                color:black;
+            }
+            
+            span
+            {
+               position: relative;
+                left: 47%;
+                font-size: 30px;
+            }
+            
+            .place
+            {
+                position: relative;
+                left:-120px;
+            }
+            
+            .place
+            {
+                margin-left:38%;
+            }
+            
+            #dt
+            {
+                width:48%;
+            }
+            
+            #date
+            {
+                margin-left: 1%;
+            }
+            
+             @media screen and (max-width: 500px)
+            {
+                body
+                {
+                    width:100%;
+                }
+                span
+                {
+                    position: relative;
+                    left:20%;
+                }
+                .f
+                {
+                    position: relative;
+                    left:20%;
+                }
+                .fa-github
+                {
+                    font-size:60px;
+                    margin-left:45%;
+                    margin-top: 0%;
+                    color:black;
+                }
+                
+                .place
+                {
+        
+                    position: relative;
+                    left:-30px;
+                    top:-10px;
+                }
+                
+                .search
+                {
+                    position: relative;
+                    top:-80px;
+                    left:-20%;
+                }
+                
+                .git
+                {
+                    position:relative;
+                    left:-5px;
+                }
+                
+                .show
+                {
+                    position: relative;
+                    top:-80px;
+                    left:-65%;
+                }
+                
+                #dt
+                {
+                    width:115px;
+                }
+                #src
+                {
+                    position: relative;
+                    left:-40%;
+                }
+                #dst
+                {
+                    position: relative;
+                    left:35%;
+                }
+                #date
+                {
+                    position: relative;
+                    left:-35%;
+                }
+                #dt1
+                {
+                    width:135px;
+                }
+                #sel
+                {
+                    width:180px;
+                    position: relative;
+                    left:-50px;
+                }
+                .book
+                {
+                    position: relative;
+                    top:-20px;
+                    left:-30px;
+                }
+                #back
+                {
+                    position: relative;
+                    top: -9px;
+                }
+                .sidenav
+                {
+                    background-color:darkblue;
+                }
+                h8
+                {
+                    color:white;
+                }
+            }
+            
+            @media screen and (min-width:501px) and (max-width: 760px)
+            {
+                body
+                {
+                    width:106%;
+                }
+                span
+                {
+                    position: relative;
+                    left:30%;
+                }   
+                footer
+                {
+                    width:100%;
+                }
+                .f
+                {
+                    position: relative;
+                    left:15%;
+                }
+                .fa-github
+                {
+                    font-size:60px;
+                    margin-left:45%;
+                    margin-top: 0%;
+                    color:black;
+                }
+                .place
+                {
+                    position: relative;
+                    top:-10px;
+                    left:-10%;
+                }
+                
+                .search
+                {
+                    position: relative;
+                    top:-70px;
+                    left:-10%;
+                }
+                
+                .show
+                {
+                    position: relative;
+                    top:-80px;
+                    left:-25%;
+                }
+                #date
+                {
+                    margin-left:4%;
+                }
+                #dt
+                {
+                    width:110px;
+                }
+                #dt1
+                {
+                    width:130px;
+                }
+                
+                #sel
+                {
+                    width:180px;
+                    position: relative;
+                    left:-25px;    
+                }
+                
+                .book
+                {
+                    position: relative;
+                    top:-15px;
+                    left:-18px;
+                }
+                
+                #back
+                {
+                    position: relative;
+                    top: -9px;
+                }
+                
+                .sidenav
+                {
+                    background-color:darkblue;
+                }
+                h8
+                {
+                    color:white;
+                } 
+            }
+            
+            @media screen and (min-width:761px) and (max-width: 992px)
+            {
+                span
+                {
+                    position: relative;
+                    left:40%;
+                }   
+                footer
+                {
+                    width:100%;
+                }
+                .f
+                {
+                    position: relative;
+                    left:10%;
+                }
+                .fa-github
+                {
+                    font-size:60px;
+                    margin-left:45%;
+                    margin-top: 0%;
+                    color:black;
+                }
+                .place
+                {
+                    margin-left:45%;
+                }
+                .search
+                {
+                    position: relative;
+                    top:-50px;
+                    left:0%;
+                }
+                
+                .show
+                {
+                    position: relative;
+                    top:-80px;
+                    left:-18%;
+                }
+                #dt
+                {
+                    width:130px;
+                }
+                #dt1
+                {
+                    width:135px;
+                }
+                #date
+                {
+                    margin-left:4%;
+                }
+                #sel
+                {
+                    width:180px;
+                    position: relative;
+                    left:-25px;    
+                }
+                
+                .book
+                {
+                    position: relative;
+                    top:-15px;
+                    left:-18px;
+                }
+                .sidenav
+                {
+                    background-color:darkblue;
+                }
+                h8
+                {
+                    color:white;
+                } 
+            }
+            
+            @media screen and (min-width:993px) and (max-width: 1275px)
+            {
+                span
+                {
+                    position: relative;
+                    left:40%;
+                }   
+                footer
+                {
+                    width:100%;
+                }
+                .f
+                {
+                    position: relative;
+                    left:10%;
+                }
+                .fa-github
+                {
+                    font-size:60px;
+                    margin-left:45%;
+                    margin-top: 0%;
+                    color:black;
+                }
+                .search
+                {
+                    position: relative;
+                    top:-50px;
+                    left:0%;
+                }
+                
+                .show
+                {
+                    position: relative;
+                    top:-80px;
+                    left:-18%;
+                }
+                #sel
+                {
+                    width:180px;
+                    position: relative;
+                    left:-25px;    
+                }
+                
+                .book
+                {
+                    position: relative;
+                    top:-15px;
+                    left:-18px;
+                }
+                #dt
+                {
+                    width:200px;
+                }
+                #dt1
+                {
+                    width:200px;
+                }
+                .sidenav
+                {
+                    background-color:darkblue;
+                }
+                h8
+                {
+                    color:white;
+                } 
+            }
+            
+            @media screen and (min-width:1276px)
+            {
+                span
+                {
+                    position: relative;
+                    left:40%;
+                }   
+                footer
+                {
+                    width:100%;
+                }
+                .f
+                {
+                    position: relative;
+                    left:10%;
+                }
+                .fa-github
+                {
+                    font-size:60px;
+                    margin-left:45%;
+                    margin-top: 0%;
+                }
+                .search
+                {
+                    position: relative;
+                    top:-50px;
+                    left:0%;
+                }
+                
+                .show
+                {
+                    position: relative;
+                    top:-80px;
+                    left:-18%;
+                }
+                #sel
+                {
+                    width:180px;
+                    position: relative;
+                    left:-25px;    
+                }
+                
+                .book
+                {
+                    position: relative;
+                    top:-15px;
+                    left:-40px;
+                }
+                #dt
+                {
+                    width:250px;
+                }
+                #dt1
+                {
+                    width:250px;
+                }
+                .sidenav
+                {
+                    background-color:darkblue;
+                }
+                h8
+                {
+                    color:white;
+                } 
+            }
+           
+            @media screen and (min-width:1101px) and (max-width: 1300px)
+			{
+            
+                .carousel
+                {
+                    height:95%;
+                }
+                
+                .hgh
+                {
+                    height:890px;
+                }
+                
             }
            
         </style>
@@ -213,10 +651,11 @@
     <body>
             
            
-        <nav style="position: fixed;left:65px;margin:-65;z-index:2;background-color: blue">
+        <nav style="position: fixed;left:65px;margin:-65;z-index:2;background-color: darkblue">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><span style="position: relative;left:690">AIRLINES</span></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <span>AIRLINES</span>
+                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('chatHome')}}">Home</a></li>
                     <li><a href="{{ url_for('chat1')}}">Search</a></li>
                     <li><a href="{{ url_for('chat2')}}">Flight</a></li>
@@ -226,17 +665,26 @@
                 </ul>
             </div>
         </nav>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('chatHome')}}"><h8>Home</h8></a></li>
+            <li><a href="{{ url_for('chat1')}}"><h8>Search</h8></a></li>
+            <li><a href="{{ url_for('chat2')}}"><h8>Flight</h8></a></li>
+            <li><a href="{{ url_for('chat3')}}"><h8>Passenger</h8></a></li>
+            <li><a href="{{ url_for('chat4')}}"><h8>Booking</h8></a></li>
+            <li><a href="{{ url_for('log')}}"><h8>Logout</h8></a></li>
+        </ul>
 
         <div id="back">
             <div class="carousel carousel-slider" data-indicators="true">
                
                  
-                <a class="carousel-item" href="#one!"><img src="https://wallpapercave.com/wp/gVij6GH.jpg" height="700px"></a>
-                <a class="carousel-item" href="#two!"><img src="https://wallpapercave.com/wp/s9nIMMH.jpg" height="700px"></a>
-                <a class="carousel-item" href="#three!"><img src="https://www.hdwallpapers.in/download/aeroplane-HD.jpg" height="700px"></a>
-                <a class="carousel-item" href="#four!"><img src="https://wallpaperwire.com/wp-content/uploads/2018/03/Aeroplane-HD-Wallpapers-51.jpg" height="700px"></a>
-                <a class="carousel-item" href="#five"><img src="https://www.themanufacturer.com/wp-content/uploads/2015/09/Although-lightning-strikes-are-rarely-the-primary-cause-of-accidents-they-can-cause-costly-delays-and-service-interruptions-image-courtesy-of-DFC.jpg" height="700px"></a>
-                <a class="carousel-item" href="#six"><img src="https://wallpapercave.com/wp/baHpXzf.jpg"></a>
+                <a class="carousel-item" href="#one!"><img class="hgh" src="https://wallpapercave.com/wp/gVij6GH.jpg" height="700px"></a>
+                <a class="carousel-item" href="#two!"><img class="hgh" src="https://wallpapercave.com/wp/s9nIMMH.jpg" height="700px"></a>
+                <a class="carousel-item" href="#three!"><img class="hgh" src="https://www.hdwallpapers.in/download/aeroplane-HD.jpg" height="700px"></a>
+                <a class="carousel-item" href="#four!"><img class="hgh" src="https://images.wallpaperscraft.com/image/airplane_sky_flight_clouds_height_118356_1920x1080.jpg" height="700px"></a>
+                <a class="carousel-item" href="#five"><img class="hgh" src="https://www.themanufacturer.com/wp-content/uploads/2015/09/Although-lightning-strikes-are-rarely-the-primary-cause-of-accidents-they-can-cause-costly-delays-and-service-interruptions-image-courtesy-of-DFC.jpg" height="700px"></a>
+                <a class="carousel-item" href="#six"><img class="hgh" src="https://wallpapercave.com/wp/baHpXzf.jpg" height="700px"></a>
                 
             </div>
 
@@ -244,73 +692,65 @@
            
            
            {% if row is defined %}
-            <div>
-                <form class="col s12" method='post' action='/chat42' >
-                    <div style="width:15%;position:relative;left:110px;top:100px">
+        <div>
+            <form class="col s12" method='post' action='/chat42'>
 
-                      
+                <div>
 
-                    </div>
-
-                    <div>
-
-                        <div class="input-field col s12" style="width:20%;position: relative;left:41%;top:-10px;">
+                    <div class="input-field col s12" style="width:20%;position: relative;left:41%;top:-10px;">
                         {% for rows in row %}
-							<h4>Source: {{rows[2]}}             Destination: {{rows[3]}}</h4>
+						<h6>Source: {{rows[2]}}             Destination: {{rows[3]}}</h6>
 						{% endfor %}
-                            <h5><strong>Select the flight</strong></h5>
-
-                            <select name="code">
-                                
+                        <h6>Select the flight</h6>
+                        <div id="sel">
+                            <select name="code" >    
                                 <option value="" disabled selected>Choose your option</option>
                                 {% for rows in row %}
                                 <option value="{{rows[0]}}">{{rows[1]}} {{rows[4]}}</option>
                               	{% endfor %}
-                            
                             </select>
-
                         </div>
+                    </div>
 
-                    </div> 
-                     <button value="login" class="button" style="width:100px;height:40px;vertical-align:middle;position:relative;left:45%;top:20px;border-radius:5px"><span style="font-size: 18px"><strong><i>Book</i></strong></span></button>
-            	</form>
+                </div> 
+                <div class="book">
+                    <button value="login" class="button" style="width:100px;height:40px;vertical-align:middle;position:relative;left:45%;top:20px;border-radius:5px;background: navy"><h7 style="font-size: 18px;color:white"><strong><i>Book</i></strong></h7></button>
                 </div>
+            </form>
+        </div>
                 {% else %}
-                <div style="margin-left: 25% ">   
+        <div class="place">   
             <div class="row colour">
                 <form class="col s12" method='post' action='/chat41'>
                     <div class="row" style="width:65%;">
-                        <div class="input-field col s6" style="color:black">
-                            <input id="first_name" type="text" style="font-size:20px;color:black" name="src" class="validate" required>
-                           <label for="first_name"><strong style="color:black;font-size: 30px;position:relative;top:-20px">Source</strong></label>
+                        <div class="input-field col s6" id="src" style="color:black">
+                            <input id="dt" type="text" name="src" class="validate" required>
+                           <label for="first_name"><h6 style="color:black">Source</h6></label>
                         </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" style="font-size:20px;position:relative;left:10%" name="dst" class="validate" required>
-                           <label for="last_name"><strong style="color:black;font-size: 30px;position:relative;top:-20px;left:10%">Destination</strong></label>
+                        <div class="input-field col s6" id="dst" style="font-size:20px;position:relative;left:10%">
+                            <input id="dt" type="text" name="dst" class="validate" required>
+                            <label for="last_name"><h6 style="color:black;">Destination</h6></label>
                         </div>
-                          <h5><strong>Booking Date</strong></h5>
-                        <input type="date" name="date">
+                        <div id="date">
+                            <h6><strong style="color:black;">Booking Date</strong></h6>
+                            <input type="date" name="date" id="dt1">
+                        </div>                    
                     </div>
-                    <button value="login" class="button" style="width:100px;height:40px;vertical-align:middle;position:relative;left:28%;top:85px;border-radius:5px"><span style="font-size: 18px"><strong><i>Search</i></strong></span></button></form>
+                    <div class="search">
+                        <button value="login" class="button" style="width:100px;height:40px;vertical-align:middle;position:relative;left:28%;top:85px;border-radius:5px;background: navy;"><h7 style="font-size: 18px;color:white"><strong><i>Search</i></strong></h7></button>
+                    </div>    
+                </form>
             </div>
             {% endif %} 
         </div>
          
            <footer class="page-footer">
               <div class="container">
-                <div class="row">
-                  <div class="col l6 s12" style="margin-left:-100px">
-                        <h5 class="white-text">Credits</h5>
-                        <p class="grey-text text-lighten-4">Manoj Kumar <span>1RN15CS002</span></p>
-                        <p class="grey-text text-lighten-4">Amith R Koradakeri <span>1RN15CS019</span></p>
-                        <p class="grey-text text-lighten-4">Deepak <span>1RN15CS041</span></p>
-                        <p class="grey-text text-lighten-4">Kushal Gowda <span>1RN15CS053</span></p>
-                         <p class="grey-text text-lighten-4">Manjunath <span>1RN15CS059</span></p>
-                    </div>
-                </div>
-                  <a class="fa fa-github" href="https://github.com/nanduladeepak/airline-system.git"><h6 style="margin-left: 10px">Github</h6></a>
+                
+                  <a class="fa fa-github" href="https://github.com/nanduladeepak/airline-system.git"><h6 class="git" style="margin-left: -15.5%;">Github</h6></a>
                 </div>
             </footer>
+            
             <script>
             
                 var modal = document.getElementById('id01');
@@ -345,19 +785,12 @@
                     setInterval(function(){
                         
                     $('.carousel').carousel('next')
-                } , 3000)
+                } , 5000)
                 
                 });
           
             </script>
-            
-            <script>
-                
-                
-                $(document).ready(function(){
-                $('.datepicker').datepicker();
-                });
-            </script>
+
             
             <script>
         
@@ -368,20 +801,23 @@
             </script>
             
             <script>
-        
-                $(document).ready(function(){
-                    
-                $('.timepicker').timepicker();
-                });
-                    
-            </script>
-            
-            <script>
             
                 $(document).ready(function(){
                 $('.modal').modal();
                 });
             
+            </script>
+            
+            <script>
+                
+                $(document).ready(function(){
+                $('.sidenav').sidenav();
+                });
+                
+            </script>
+            <script src="https://snatchbot.me/sdk/webchat.min.js"></script>
+            <script> 
+                Init('?botID=59848&appID=webchat', 450, 600, 'https://dvgpba5hywmpo.cloudfront.net/media/image/MLsOLyg82Hd3ss2vkAUoTha1j', 'bubble', '#789BA8', 80, 80, 62.99999999999999, '', '1', '#1E9BB0', '#000000', 0); 
             </script>
 
     </body>
