@@ -122,7 +122,7 @@ def chat42():
 	
 @app.route("/chat21",methods=['post'])
 def chat21():
-	if email!=0:
+	if email==0:
 		return render_template('login.html')
 	else:
 		conn=sql.connect('mydatabase.db')
@@ -140,7 +140,7 @@ def chat21():
 	
 @app.route("/chat31",methods=['post'])
 def chat31():
-	if email!=0:
+	if email==0:
 		return render_template('login.html')
 	else:
 		conn=sql.connect('mydatabase.db')
@@ -232,6 +232,7 @@ def login():
 		error=1
 		return render_template('login.html',error=error)
 	if email==det[0][0] and password==det[0][1]:
+		email=1
 		return render_template('chatHome.html')
 	else:
 		error=1
